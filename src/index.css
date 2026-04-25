@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@200..1000&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Cairo", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Amiri", serif;
+  
+  --color-brand-teal: #10a5a5;
+  --color-brand-teal-light: #48c1c1;
+  --color-brand-teal-dark: #0d8a8a;
+  --color-brand-dark: #1f2937;
+  --color-brand-gray: #374151;
+  --color-brand-cream: #f8fafc;
+  --color-brand-border: #e5e7eb;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-brand-cream text-brand-dark transition-colors duration-300;
+  }
+}
+
+.arabic-serif {
+  font-family: var(--font-serif);
+}
+
+.text-reveal {
+  display: inline-block;
+  overflow: hidden;
+}
